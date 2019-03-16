@@ -12,7 +12,7 @@ var game = new Phaser.Game(width, height, Phaser.AUTO, 'aws-serverless-samfarm',
 var sprites;
 var DESIRED_SAM_COUNT = 1;
 var CURRENT_SAM_COUNT = 1;
-var MAX_SAM_CHANGE = 20;
+var MAX_SAM_CHANGE = 25;
 var LAST_CHANGE_TIME = Date.now();
 var GET_SAM_COUNT_URL = 'https://27ahskuhi0.execute-api.us-east-1.amazonaws.com/Prod/sam';
 var TIME_BETWEEN_COUNT_UPDATE_MS = 4000;
