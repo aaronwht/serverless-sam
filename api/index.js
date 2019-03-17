@@ -2,7 +2,7 @@
 var moment = require('moment');
 const connectToDatabase = require('./db');
 require('dotenv').config({ path: './variables.env' });
-
+// nothing
 exports.handler = (event, context, callback) => {
 
     var originURL = process.env.ORIGIN_URL || '*';
