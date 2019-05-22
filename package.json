@@ -2,6 +2,7 @@
   "name": "aws-serverless-samfarm-api-demo",
   "version": "1.0.0",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "moment": "^2.16.0",
     "mongoose": "^5.5.10"
   },
