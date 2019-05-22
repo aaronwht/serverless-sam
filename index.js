@@ -1,7 +1,9 @@
 'use strict';
 var moment = require('moment');
 const connectToDatabase = require('./db');
-require('dotenv').config({ path: './variables.env' });
+const dotenv = require('dotenv')
+dotenv.load()
+
 // nothing
 exports.handler = (event, context, callback) => {
     callback(null, {
