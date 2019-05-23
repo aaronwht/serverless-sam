@@ -3,16 +3,14 @@
 //const connectToDatabase = require('./db');
 //require('dotenv').config()
 
-// nothing
-exports.handler = (event, context, callback) => {
-    
+module.exports.handler = async (event, context) => {
     return {
-        statusCode: 200,
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({status: 'success'})
-      }
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({status:'success'})
+    }
 
-      /*
+    /*
     callback(null, {
         "statusCode": 200,
         "body": {
@@ -20,4 +18,4 @@ exports.handler = (event, context, callback) => {
         }
     })
     */
-}
+  }
