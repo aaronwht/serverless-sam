@@ -1,7 +1,7 @@
 //'use strict';
 //var moment = require('moment');
-//const connectToDatabase = require('./db');
-//require('dotenv').config()
+const connectToDatabase = require('./db');
+require('dotenv').config()
 
 module.exports.handler = async (event, context) => {
   return {
