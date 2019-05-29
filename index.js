@@ -1,11 +1,11 @@
-//'use strict';
-//var moment = require('moment');
+'use strict';
 const connectToDatabase = require('./db')
 const Note = require('./Note')
 require('dotenv').config()
 
 module.exports.handler = async (event, context) => {
   context.callbackWaitsForEmptyEventLoop = false
+
   await connectToDatabase(event)
   const notes = await Note.find()
   return {
